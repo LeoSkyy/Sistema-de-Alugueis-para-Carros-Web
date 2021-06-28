@@ -1,0 +1,39 @@
+<html>
+<head>
+<title>.travis.yml</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style type="text/css">
+.s0 { color: #cc7832;}
+.s1 { color: #a9b7c6;}
+.s2 { color: #a9b7c6;}
+.s3 { color: #6a8759;}
+</style>
+</head>
+<body bgcolor="#2b2b2b">
+<table CELLSPACING=0 CELLPADDING=5 COLS=1 WIDTH="100%" BGCOLOR="#606060" >
+<tr><td><center>
+<font face="Arial, Helvetica" color="#000000">
+.travis.yml</font>
+</center></td></tr></table>
+<pre><span class="s0">dist</span><span class="s1">: </span><span class="s2">trusty</span>
+
+<span class="s0">language</span><span class="s1">: </span><span class="s2">node_js</span>
+<span class="s0">node_js</span><span class="s1">:</span>
+  <span class="s1">- </span><span class="s2">10</span>
+
+<span class="s0">addons</span><span class="s1">:</span>
+  <span class="s0">chrome</span><span class="s1">: </span><span class="s2">stable</span>
+
+<span class="s0">cache</span><span class="s1">:</span>
+  <span class="s0">directories</span><span class="s1">:</span>
+    <span class="s1">- </span><span class="s3">&quot;$HOME/.npm&quot;</span>
+
+<span class="s0">install</span><span class="s1">:</span>
+  <span class="s1">- </span><span class="s2">npm install</span>
+
+<span class="s0">script</span><span class="s1">:</span>
+  <span class="s1">- </span><span class="s2">npm run test-single-run -- --browsers ChromeHeadless</span>
+  <span class="s1">- </span><span class="s2">(npm start &gt; /dev/null &amp;) &amp;&amp; npm run protractor -- --capabilities.chromeOptions.args headless</span>
+</pre>
+</body>
+</html>

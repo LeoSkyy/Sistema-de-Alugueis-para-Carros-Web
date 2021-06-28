@@ -1,0 +1,61 @@
+<html>
+<head>
+<title>package.json</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style type="text/css">
+.s0 { color: #a9b7c6;}
+.s1 { color: #6a8759;}
+.s2 { color: #cc7832;}
+</style>
+</head>
+<body bgcolor="#2b2b2b">
+<table CELLSPACING=0 CELLPADDING=5 COLS=1 WIDTH="100%" BGCOLOR="#606060" >
+<tr><td><center>
+<font face="Arial, Helvetica" color="#000000">
+package.json</font>
+</center></td></tr></table>
+<pre><span class="s0">{</span>
+  <span class="s1">&quot;name&quot;</span><span class="s2">: </span><span class="s1">&quot;angular-seed&quot;</span><span class="s2">,</span>
+  <span class="s1">&quot;private&quot;</span><span class="s2">: true,</span>
+  <span class="s1">&quot;version&quot;</span><span class="s2">: </span><span class="s1">&quot;0.0.0&quot;</span><span class="s2">,</span>
+  <span class="s1">&quot;description&quot;</span><span class="s2">: </span><span class="s1">&quot;A starter project for AngularJS&quot;</span><span class="s2">,</span>
+  <span class="s1">&quot;repository&quot;</span><span class="s2">: </span><span class="s1">&quot;https://github.com/angular/angular-seed&quot;</span><span class="s2">,</span>
+  <span class="s1">&quot;license&quot;</span><span class="s2">: </span><span class="s1">&quot;MIT&quot;</span><span class="s2">,</span>
+  <span class="s1">&quot;dependencies&quot;</span><span class="s2">: </span><span class="s0">{</span>
+    <span class="s1">&quot;angular&quot;</span><span class="s2">: </span><span class="s1">&quot;^1.7.5&quot;</span><span class="s2">,</span>
+    <span class="s1">&quot;angular-loader&quot;</span><span class="s2">: </span><span class="s1">&quot;^1.7.5&quot;</span><span class="s2">,</span>
+    <span class="s1">&quot;angular-route&quot;</span><span class="s2">: </span><span class="s1">&quot;^1.7.5&quot;</span><span class="s2">,</span>
+    <span class="s1">&quot;html5-boilerplate&quot;</span><span class="s2">: </span><span class="s1">&quot;0.0.1&quot;</span>
+  <span class="s0">}</span><span class="s2">,</span>
+  <span class="s1">&quot;devDependencies&quot;</span><span class="s2">: </span><span class="s0">{</span>
+    <span class="s1">&quot;angular-mocks&quot;</span><span class="s2">: </span><span class="s1">&quot;^1.7.5&quot;</span><span class="s2">,</span>
+    <span class="s1">&quot;cpx&quot;</span><span class="s2">: </span><span class="s1">&quot;^1.5.0&quot;</span><span class="s2">,</span>
+    <span class="s1">&quot;http-server&quot;</span><span class="s2">: </span><span class="s1">&quot;^0.11.1&quot;</span><span class="s2">,</span>
+    <span class="s1">&quot;jasmine-core&quot;</span><span class="s2">: </span><span class="s1">&quot;^3.3.0&quot;</span><span class="s2">,</span>
+    <span class="s1">&quot;karma&quot;</span><span class="s2">: </span><span class="s1">&quot;^3.1.1&quot;</span><span class="s2">,</span>
+    <span class="s1">&quot;karma-chrome-launcher&quot;</span><span class="s2">: </span><span class="s1">&quot;^2.2.0&quot;</span><span class="s2">,</span>
+    <span class="s1">&quot;karma-firefox-launcher&quot;</span><span class="s2">: </span><span class="s1">&quot;^1.1.0&quot;</span><span class="s2">,</span>
+    <span class="s1">&quot;karma-jasmine&quot;</span><span class="s2">: </span><span class="s1">&quot;^1.1.2&quot;</span><span class="s2">,</span>
+    <span class="s1">&quot;protractor&quot;</span><span class="s2">: </span><span class="s1">&quot;^5.4.1&quot;</span>
+  <span class="s0">}</span><span class="s2">,</span>
+  <span class="s1">&quot;scripts&quot;</span><span class="s2">: </span><span class="s0">{</span>
+    <span class="s1">&quot;postinstall&quot;</span><span class="s2">: </span><span class="s1">&quot;npm run copy-libs&quot;</span><span class="s2">,</span>
+    <span class="s1">&quot;update-deps&quot;</span><span class="s2">: </span><span class="s1">&quot;npm update&quot;</span><span class="s2">,</span>
+    <span class="s1">&quot;postupdate-deps&quot;</span><span class="s2">: </span><span class="s1">&quot;npm run copy-libs&quot;</span><span class="s2">,</span>
+    <span class="s1">&quot;copy-libs&quot;</span><span class="s2">: </span><span class="s1">&quot;cpx </span><span class="s2">\&quot;</span><span class="s1">node_modules/{angular,angular-*,html5-boilerplate/dist}/**/*</span><span class="s2">\&quot; </span><span class="s1">app/lib -C&quot;</span><span class="s2">,</span>
+    <span class="s1">&quot;prestart&quot;</span><span class="s2">: </span><span class="s1">&quot;npm install&quot;</span><span class="s2">,</span>
+    <span class="s1">&quot;start&quot;</span><span class="s2">: </span><span class="s1">&quot;http-server -a localhost -p 8000 -c-1 ./app&quot;</span><span class="s2">,</span>
+    <span class="s1">&quot;pretest&quot;</span><span class="s2">: </span><span class="s1">&quot;npm install&quot;</span><span class="s2">,</span>
+    <span class="s1">&quot;test&quot;</span><span class="s2">: </span><span class="s1">&quot;karma start karma.conf.js&quot;</span><span class="s2">,</span>
+    <span class="s1">&quot;test-single-run&quot;</span><span class="s2">: </span><span class="s1">&quot;npm test -- --single-run&quot;</span><span class="s2">,</span>
+    <span class="s1">&quot;preupdate-webdriver&quot;</span><span class="s2">: </span><span class="s1">&quot;npm install&quot;</span><span class="s2">,</span>
+    <span class="s1">&quot;//&quot;</span><span class="s2">: </span><span class="s1">&quot;Do not install the Firefox driver to work around https://github.com/angular/webdriver-manager/issues/303.&quot;</span><span class="s2">,</span>
+    <span class="s1">&quot;update-webdriver&quot;</span><span class="s2">: </span><span class="s1">&quot;webdriver-manager update --gecko false&quot;</span><span class="s2">,</span>
+    <span class="s1">&quot;preprotractor&quot;</span><span class="s2">: </span><span class="s1">&quot;npm run update-webdriver&quot;</span><span class="s2">,</span>
+    <span class="s1">&quot;protractor&quot;</span><span class="s2">: </span><span class="s1">&quot;protractor e2e-tests/protractor.conf.js&quot;</span><span class="s2">,</span>
+    <span class="s1">&quot;update-index-async&quot;</span><span class="s2">: </span><span class="s1">&quot;node --eval </span><span class="s2">\&quot;</span><span class="s1">var fs=require('fs'),indexFile='app/index-async.html',loaderFile='app/lib/angular-loader/angular-loader.min.js',loaderText=fs.readFileSync(loaderFile,'utf-8').split(/sourceMappingURL=angular-loader.min.js.map/).join('sourceMappingURL=lib/angular-loader/angular-loader.min.js.map'),indexText=fs.readFileSync(indexFile,'utf-8').split(/</span><span class="s2">\\</span><span class="s1">/</span><span class="s2">\\</span><span class="s1">/@@NG_LOADER_START@@[</span><span class="s2">\\</span><span class="s1">s</span><span class="s2">\\</span><span class="s1">S]*</span><span class="s2">\\</span><span class="s1">/</span><span class="s2">\\</span><span class="s1">/@@NG_LOADER_END@@/).join('//@@NG_LOADER_START@@</span><span class="s2">\\</span><span class="s1">n'+loaderText+'    //@@NG_LOADER_END@@');fs.writeFileSync(indexFile,indexText);</span><span class="s2">\&quot;</span><span class="s1">&quot;</span>
+  <span class="s0">}</span>
+<span class="s0">}</span>
+</pre>
+</body>
+</html>

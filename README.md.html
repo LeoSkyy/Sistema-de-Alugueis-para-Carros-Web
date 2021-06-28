@@ -1,0 +1,318 @@
+<html>
+<head>
+<title>README.md</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style type="text/css">
+.s0 { color: #cc7832;}
+.s1 { color: #a9b7c6;}
+.s2 { color: #808080;}
+.s3 { color: #a9b7c6;}
+.s4 { color: #ffc66d; font-style: italic;}
+</style>
+</head>
+<body bgcolor="#2b2b2b">
+<table CELLSPACING=0 CELLPADDING=5 COLS=1 WIDTH="100%" BGCOLOR="#606060" >
+<tr><td><center>
+<font face="Arial, Helvetica" color="#000000">
+README.md</font>
+</center></td></tr></table>
+<pre><span class="s0"># </span><span class="s2">`</span><span class="s3">angular-seed</span><span class="s2">` </span><span class="s3">— the seed for AngularJS apps</span>
+
+<span class="s3">This project is an application skeleton for a typical </span><span class="s1">[</span><span class="s3">AngularJS</span><span class="s1">][</span><span class="s3">angularjs</span><span class="s1">] </span><span class="s3">web app. You can use it</span>
+<span class="s3">to quickly bootstrap your angular webapp projects and dev environment for these projects.</span>
+
+<span class="s3">The seed contains a sample AngularJS application and is preconfigured to install the AngularJS</span>
+<span class="s3">framework and a bunch of development and testing tools for instant web development gratification.</span>
+
+<span class="s3">The seed app doesn't do much, just shows how to wire two controllers and views together.</span>
+
+
+<span class="s0">## </span><span class="s3">Getting Started</span>
+
+<span class="s3">To get you started you can simply clone the </span><span class="s2">`</span><span class="s3">angular-seed</span><span class="s2">` </span><span class="s3">repository and install the dependencies</span><span class="s1">:</span>
+
+<span class="s0">### </span><span class="s3">Prerequisites</span>
+
+<span class="s3">You need git to clone the </span><span class="s2">`</span><span class="s3">angular-seed</span><span class="s2">` </span><span class="s3">repository. You can get git from </span><span class="s1">[</span><span class="s3">here</span><span class="s1">][</span><span class="s3">git</span><span class="s1">]</span><span class="s3">.</span>
+
+<span class="s3">We also use a number of Node.js tools to initialize and test </span><span class="s2">`</span><span class="s3">angular-seed</span><span class="s2">`</span><span class="s3">. You must have Node.js</span>
+<span class="s3">and its package manager </span><span class="s1">(</span><span class="s3">npm</span><span class="s1">) </span><span class="s3">installed. You can get them from </span><span class="s1">[</span><span class="s3">here</span><span class="s1">][</span><span class="s3">node</span><span class="s1">]</span><span class="s3">.</span>
+
+<span class="s0">### </span><span class="s3">Clone </span><span class="s2">`</span><span class="s3">angular-seed</span><span class="s2">`</span>
+
+<span class="s3">Clone the </span><span class="s2">`</span><span class="s3">angular-seed</span><span class="s2">` </span><span class="s3">repository using git</span><span class="s1">:</span>
+
+<span class="s2">```</span>
+<span class="s2">git clone https://github.com/angular/angular-seed.git</span>
+<span class="s2">cd angular-seed</span>
+<span class="s2">```</span>
+
+<span class="s3">If you just want to start a new project without the </span><span class="s2">`</span><span class="s3">angular-seed</span><span class="s2">` </span><span class="s3">commit history then you can do</span><span class="s1">:</span>
+
+<span class="s2">```</span>
+<span class="s2">git clone --depth=1 https://github.com/angular/angular-seed.git &lt;your-project-name&gt;</span>
+<span class="s2">```</span>
+
+<span class="s3">The </span><span class="s2">`</span><span class="s3">depth=1</span><span class="s2">` </span><span class="s3">tells git to only pull down one commit worth of historical data.</span>
+
+<span class="s0">### </span><span class="s3">Install Dependencies</span>
+
+<span class="s3">We have two kinds of dependencies in this project</span><span class="s1">: </span><span class="s3">tools and AngularJS framework code. The tools</span>
+<span class="s3">help us manage and test the application.</span>
+
+<span class="s0">* </span><span class="s3">We get the tools we depend upon and the AngularJS code via </span><span class="s2">`</span><span class="s3">npm</span><span class="s2">`</span><span class="s3">, the </span><span class="s1">[</span><span class="s3">Node package manager</span><span class="s1">][</span><span class="s3">npm</span><span class="s1">]</span><span class="s3">.</span>
+<span class="s0">* </span><span class="s3">In order to run the end-to-end tests, you will also need to have the</span>
+  <span class="s1">[</span><span class="s3">Java Development Kit </span><span class="s1">(</span><span class="s3">JDK</span><span class="s1">)][</span><span class="s3">jdk</span><span class="s1">] </span><span class="s3">installed on your machine. Check out the section on</span>
+  <span class="s1">[</span><span class="s3">end-to-end testing</span><span class="s1">](</span><span class="s3">#e2e-testing</span><span class="s1">) </span><span class="s3">for more info.</span>
+
+<span class="s3">We have preconfigured </span><span class="s2">`</span><span class="s3">npm</span><span class="s2">` </span><span class="s3">to automatically copy the downloaded AngularJS files to </span><span class="s2">`</span><span class="s3">app/lib</span><span class="s2">` </span><span class="s3">so we</span>
+<span class="s3">can simply do</span><span class="s1">:</span>
+
+<span class="s2">```</span>
+<span class="s2">npm install</span>
+<span class="s2">```</span>
+
+<span class="s3">Behind the scenes this will also call </span><span class="s2">`</span><span class="s3">npm run copy-libs</span><span class="s2">`</span><span class="s3">, which copies the AngularJS files and</span>
+<span class="s3">other front end dependencies. After that, you should find out that you have two new directories in</span>
+<span class="s3">your project.</span>
+
+<span class="s0">* </span><span class="s2">`</span><span class="s3">node_modules</span><span class="s2">` </span><span class="s3">- contains the npm packages for the tools we need</span>
+<span class="s0">* </span><span class="s2">`</span><span class="s3">app/lib</span><span class="s2">` </span><span class="s3">- contains the AngularJS framework files and other front end dependencies</span>
+
+<span class="s1">*</span><span class="s3">Note copying the AngularJS files from </span><span class="s2">`</span><span class="s3">node_modules</span><span class="s2">` </span><span class="s3">to </span><span class="s2">`</span><span class="s3">app/lib</span><span class="s2">` </span><span class="s3">makes it easier to serve the</span>
+<span class="s3">files by a web server.</span><span class="s1">*</span>
+
+<span class="s0">### </span><span class="s3">Run the Application</span>
+
+<span class="s3">We have preconfigured the project with a simple development web server. The simplest way to start</span>
+<span class="s3">this server is</span><span class="s1">:</span>
+
+<span class="s2">```</span>
+<span class="s2">npm start</span>
+<span class="s2">```</span>
+
+<span class="s3">Now browse to the app at </span><span class="s1">[</span><span class="s2">`</span><span class="s3">localhost</span><span class="s1">:</span><span class="s3">8000/index.html</span><span class="s2">`</span><span class="s1">][</span><span class="s3">local-app-url</span><span class="s1">]</span><span class="s3">.</span>
+
+
+<span class="s0">## </span><span class="s3">Directory Layout</span>
+
+<span class="s2">```</span>
+<span class="s2">app/                  --&gt; all of the source files for the application</span>
+  <span class="s2">app.css               --&gt; default stylesheet</span>
+  <span class="s2">core/                 --&gt; all app specific modules</span>
+    <span class="s2">version/              --&gt; version related components</span>
+      <span class="s2">version.js                 --&gt; version module declaration and basic &quot;version&quot; value service</span>
+      <span class="s2">version_test.js            --&gt; &quot;version&quot; value service tests</span>
+      <span class="s2">version-directive.js       --&gt; custom directive that returns the current app version</span>
+      <span class="s2">version-directive_test.js  --&gt; version directive tests</span>
+      <span class="s2">interpolate-filter.js      --&gt; custom interpolation filter</span>
+      <span class="s2">interpolate-filter_test.js --&gt; interpolate filter tests</span>
+  <span class="s2">view1/                --&gt; the view1 view template and logic</span>
+    <span class="s2">view1.html            --&gt; the partial template</span>
+    <span class="s2">view1.js              --&gt; the controller logic</span>
+    <span class="s2">view1_test.js         --&gt; tests of the controller</span>
+  <span class="s2">view2/                --&gt; the view2 view template and logic</span>
+    <span class="s2">view2.html            --&gt; the partial template</span>
+    <span class="s2">view2.js              --&gt; the controller logic</span>
+    <span class="s2">view2_test.js         --&gt; tests of the controller</span>
+  <span class="s2">app.js                --&gt; main application module</span>
+  <span class="s2">index.html            --&gt; app layout file (the main html template file of the app)</span>
+  <span class="s2">index-async.html      --&gt; just like index.html, but loads js files asynchronously</span>
+<span class="s2">e2e-tests/            --&gt; end-to-end tests</span>
+  <span class="s2">protractor-conf.js    --&gt; Protractor config file</span>
+  <span class="s2">scenarios.js          --&gt; end-to-end scenarios to be run by Protractor</span>
+<span class="s2">karma.conf.js         --&gt; config file for running unit tests with Karma</span>
+<span class="s2">package.json          --&gt; Node.js specific metadata, including development tools dependencies</span>
+<span class="s2">package-lock.json     --&gt; Npm specific metadata, including versions of installed development tools dependencies</span>
+<span class="s2">```</span>
+
+
+<span class="s0">## </span><span class="s3">Testing</span>
+
+<span class="s3">There are two kinds of tests in the </span><span class="s2">`</span><span class="s3">angular-seed</span><span class="s2">` </span><span class="s3">application</span><span class="s1">: </span><span class="s3">Unit tests and end-to-end tests.</span>
+
+<span class="s0">### </span><span class="s3">Running Unit Tests</span>
+
+<span class="s3">The </span><span class="s2">`</span><span class="s3">angular-seed</span><span class="s2">` </span><span class="s3">app comes preconfigured with unit tests. These are written in </span><span class="s1">[</span><span class="s3">Jasmine</span><span class="s1">][</span><span class="s3">jasmine</span><span class="s1">]</span><span class="s3">,</span>
+<span class="s3">which we run with the </span><span class="s1">[</span><span class="s3">Karma</span><span class="s1">][</span><span class="s3">karma</span><span class="s1">] </span><span class="s3">test runner. We provide a Karma configuration file to run them.</span>
+
+<span class="s0">* </span><span class="s3">The configuration is found at </span><span class="s2">`</span><span class="s3">karma.conf.js</span><span class="s2">`</span><span class="s3">.</span>
+<span class="s0">* </span><span class="s3">The unit tests are found next to the code they are testing and have a </span><span class="s2">`</span><span class="s3">.spec.js</span><span class="s2">` </span><span class="s3">suffix </span><span class="s1">(</span><span class="s3">e.g.</span>
+  <span class="s2">`</span><span class="s3">view1.spec.js</span><span class="s2">`</span><span class="s1">)</span><span class="s3">.</span>
+
+<span class="s3">The easiest way to run the unit tests is to use the supplied npm script</span><span class="s1">:</span>
+
+<span class="s2">```</span>
+<span class="s2">npm test</span>
+<span class="s2">```</span>
+
+<span class="s3">This script will start the Karma test runner to execute the unit tests. Moreover, Karma will start</span>
+<span class="s3">watching the source and test files for changes and then re-run the tests whenever any of them</span>
+<span class="s3">changes.</span>
+<span class="s3">This is the recommended strategy; if your unit tests are being run every time you save a file then</span>
+<span class="s3">you receive instant feedback on any changes that break the expected code functionality.</span>
+
+<span class="s3">You can also ask Karma to do a single run of the tests and then exit. This is useful if you want to</span>
+<span class="s3">check that a particular version of the code is operating as expected. The project contains a</span>
+<span class="s3">predefined script to do this</span><span class="s1">:</span>
+
+<span class="s2">```</span>
+<span class="s2">npm run test-single-run</span>
+<span class="s2">```</span>
+
+
+<span class="s3">&lt;a name=&quot;e2e-testing&quot;&gt;&lt;/a&gt;</span>
+<span class="s0">### </span><span class="s3">Running End-to-End Tests</span>
+
+<span class="s3">The </span><span class="s2">`</span><span class="s3">angular-seed</span><span class="s2">` </span><span class="s3">app comes with end-to-end tests, again written in </span><span class="s1">[</span><span class="s3">Jasmine</span><span class="s1">][</span><span class="s3">jasmine</span><span class="s1">]</span><span class="s3">. These tests</span>
+<span class="s3">are run with the </span><span class="s1">[</span><span class="s3">Protractor</span><span class="s1">][</span><span class="s3">protractor</span><span class="s1">] </span><span class="s3">End-to-End test runner. It uses native events and has</span>
+<span class="s3">special features for AngularJS applications.</span>
+
+<span class="s0">* </span><span class="s3">The configuration is found at </span><span class="s2">`</span><span class="s3">e2e-tests/protractor-conf.js</span><span class="s2">`</span><span class="s3">.</span>
+<span class="s0">* </span><span class="s3">The end-to-end tests are found in </span><span class="s2">`</span><span class="s3">e2e-tests/scenarios.js</span><span class="s2">`</span><span class="s3">.</span>
+
+<span class="s3">Protractor simulates interaction with our web app and verifies that the application responds</span>
+<span class="s3">correctly. Therefore, our web server needs to be serving up the application, so that Protractor can</span>
+<span class="s3">interact with it.</span>
+
+<span class="s1">**</span><span class="s3">Before starting Protractor, open a separate terminal window and run</span><span class="s1">:**</span>
+
+<span class="s2">```</span>
+<span class="s2">npm start</span>
+<span class="s2">```</span>
+
+<span class="s3">In addition, since Protractor is built upon WebDriver, we need to ensure that it is installed and</span>
+<span class="s3">up-to-date. The </span><span class="s2">`</span><span class="s3">angular-seed</span><span class="s2">` </span><span class="s3">project is configured to do this automatically before running the</span>
+<span class="s3">end-to-end tests, so you don't need to worry about it. If you want to manually update the WebDriver,</span>
+<span class="s3">you can run</span><span class="s1">:</span>
+
+<span class="s2">```</span>
+<span class="s2">npm run update-webdriver</span>
+<span class="s2">```</span>
+
+<span class="s3">Once you have ensured that the development web server hosting our application is up and running, you</span>
+<span class="s3">can run the end-to-end tests using the supplied npm script</span><span class="s1">:</span>
+
+<span class="s2">```</span>
+<span class="s2">npm run protractor</span>
+<span class="s2">```</span>
+
+<span class="s3">This script will execute the end-to-end tests against the application being hosted on the</span>
+<span class="s3">development server.</span>
+
+<span class="s1">**</span><span class="s3">Note</span><span class="s1">:**</span>
+<span class="s3">Under the hood, Protractor uses the </span><span class="s1">[</span><span class="s3">Selenium Standalone Server</span><span class="s1">][</span><span class="s3">selenium</span><span class="s1">]</span><span class="s3">, which in turn requires</span>
+<span class="s3">the </span><span class="s1">[</span><span class="s3">Java Development Kit </span><span class="s1">(</span><span class="s3">JDK</span><span class="s1">)][</span><span class="s3">jdk</span><span class="s1">] </span><span class="s3">to be installed on your local machine. Check this by running</span>
+<span class="s2">`</span><span class="s3">java -version</span><span class="s2">` </span><span class="s3">from the command line.</span>
+
+<span class="s3">If JDK is not already installed, you can download it </span><span class="s1">[</span><span class="s3">here</span><span class="s1">][</span><span class="s3">jdk-download</span><span class="s1">]</span><span class="s3">.</span>
+
+
+<span class="s0">## </span><span class="s3">Updating AngularJS and other dependencies</span>
+
+<span class="s3">Since the AngularJS framework library code and tools are acquired through package managers </span><span class="s1">(</span><span class="s3">e.g.</span>
+<span class="s3">npm</span><span class="s1">) </span><span class="s3">you can use these tools to easily update the dependencies. Simply run the preconfigured script</span><span class="s1">:</span>
+
+<span class="s2">```</span>
+<span class="s2">npm run update-deps</span>
+<span class="s2">```</span>
+
+<span class="s3">This will call </span><span class="s2">`</span><span class="s3">npm update</span><span class="s2">` </span><span class="s3">and </span><span class="s2">`</span><span class="s3">npm run copy-libs</span><span class="s2">`</span><span class="s3">, which in turn will find and install the latest</span>
+<span class="s3">versions that match the version ranges specified in the </span><span class="s2">`</span><span class="s3">package.json</span><span class="s2">` </span><span class="s3">file.</span>
+
+<span class="s3">If you want to update a dependency to a version newer than what the specificed range would permit,</span>
+<span class="s3">you can change the version range in </span><span class="s2">`</span><span class="s3">package.json</span><span class="s2">` </span><span class="s3">and then run </span><span class="s2">`</span><span class="s3">npm run update-deps</span><span class="s2">` </span><span class="s3">as usual.</span>
+
+
+<span class="s0">## </span><span class="s3">Loading AngularJS Asynchronously</span>
+
+<span class="s3">The </span><span class="s2">`</span><span class="s3">angular-seed</span><span class="s2">` </span><span class="s3">project supports loading the framework and application scripts asynchronously.</span>
+<span class="s3">The special </span><span class="s2">`</span><span class="s3">index-async.html</span><span class="s2">` </span><span class="s3">is designed to support this style of loading. For it to work you must</span>
+<span class="s3">inject a piece of AngularJS JavaScript into the HTML page. The project has a predefined script to help</span>
+<span class="s3">do this</span><span class="s1">:</span>
+
+<span class="s2">```</span>
+<span class="s2">npm run update-index-async</span>
+<span class="s2">```</span>
+
+<span class="s3">This will copy the contents of the </span><span class="s2">`</span><span class="s3">angular-loader.js</span><span class="s2">` </span><span class="s3">library file into the </span><span class="s2">`</span><span class="s3">index-async.html</span><span class="s2">`</span>
+<span class="s3">page. You can run this every time you update the version of AngularJS that you are using.</span>
+
+
+<span class="s0">## </span><span class="s3">Serving the Application Files</span>
+
+<span class="s3">While AngularJS is client-side-only technology and it is possible to create AngularJS web apps that</span>
+<span class="s3">do not require a backend server at all, we recommend serving the project files using a local</span>
+<span class="s3">web server during development to avoid issues with security restrictions </span><span class="s1">(</span><span class="s3">sandbox</span><span class="s1">) </span><span class="s3">in browsers. The</span>
+<span class="s3">sandbox implementation varies between browsers, but quite often prevents things like cookies, XHR,</span>
+<span class="s3">etc to function properly when an HTML page is opened via the </span><span class="s2">`</span><span class="s3">file</span><span class="s1">:</span><span class="s3">//</span><span class="s2">` </span><span class="s3">scheme instead of </span><span class="s2">`</span><span class="s3">http</span><span class="s1">:</span><span class="s3">//</span><span class="s2">`</span><span class="s3">.</span>
+
+<span class="s0">### </span><span class="s3">Running the App during Development</span>
+
+<span class="s3">The </span><span class="s2">`</span><span class="s3">angular-seed</span><span class="s2">` </span><span class="s3">project comes preconfigured with a local development web server. It is a Node.js</span>
+<span class="s3">tool called </span><span class="s1">[</span><span class="s3">http-server</span><span class="s1">][</span><span class="s3">http-server</span><span class="s1">]</span><span class="s3">. You can start this web server with </span><span class="s2">`</span><span class="s3">npm start</span><span class="s2">`</span><span class="s3">, but you may</span>
+<span class="s3">choose to install the tool globally</span><span class="s1">:</span>
+
+<span class="s2">```</span>
+<span class="s2">sudo npm install -g http-server</span>
+<span class="s2">```</span>
+
+<span class="s3">Then you can start your own development web server to serve static files from any folder by running</span><span class="s1">:</span>
+
+<span class="s2">```</span>
+<span class="s2">http-server -a localhost -p 8000</span>
+<span class="s2">```</span>
+
+<span class="s3">Alternatively, you can choose to configure your own web server, such as Apache or Nginx. Just</span>
+<span class="s3">configure your server to serve the files under the </span><span class="s2">`</span><span class="s3">app/</span><span class="s2">` </span><span class="s3">directory.</span>
+
+<span class="s0">### </span><span class="s3">Running the App in Production</span>
+
+<span class="s3">This really depends on how complex your app is and the overall infrastructure of your system, but</span>
+<span class="s3">the general rule is that all you need in production are the files under the </span><span class="s2">`</span><span class="s3">app/</span><span class="s2">` </span><span class="s3">directory.</span>
+<span class="s3">Everything else should be omitted.</span>
+
+<span class="s3">AngularJS apps are really just a bunch of static HTML, CSS and JavaScript files that need to be</span>
+<span class="s3">hosted somewhere they can be accessed by browsers.</span>
+
+<span class="s3">If your AngularJS app is talking to the backend server via XHR or other means, you need to figure</span>
+<span class="s3">out what is the best way to host the static files to comply with the same origin policy if</span>
+<span class="s3">applicable. Usually this is done by hosting the files by the backend server or through</span>
+<span class="s3">reverse-proxying the backend server</span><span class="s1">(</span><span class="s3">s</span><span class="s1">) </span><span class="s3">and web server</span><span class="s1">(</span><span class="s3">s</span><span class="s1">)</span><span class="s3">.</span>
+
+
+<span class="s0">## </span><span class="s3">Continuous Integration</span>
+
+<span class="s0">### </span><span class="s3">Travis CI</span>
+
+<span class="s1">[</span><span class="s3">Travis CI</span><span class="s1">][</span><span class="s3">travis</span><span class="s1">] </span><span class="s3">is a continuous integration service, which can monitor GitHub for new commits to</span>
+<span class="s3">your repository and execute scripts such as building the app or running tests. The </span><span class="s2">`</span><span class="s3">angular-seed</span><span class="s2">`</span>
+<span class="s3">project contains a Travis configuration file, </span><span class="s2">`</span><span class="s3">.travis.yml</span><span class="s2">`</span><span class="s3">, which will cause Travis to run your</span>
+<span class="s3">tests when you push to GitHub.</span>
+
+<span class="s3">You will need to enable the integration between Travis and GitHub. See the</span>
+<span class="s1">[</span><span class="s3">Travis website</span><span class="s1">][</span><span class="s3">travis-docs</span><span class="s1">] </span><span class="s3">for instructions on how to do this.</span>
+
+
+<span class="s0">## </span><span class="s3">Contact</span>
+
+<span class="s3">For more information on AngularJS please check out </span><span class="s1">[</span><span class="s3">angularjs.org</span><span class="s1">][</span><span class="s3">angularjs</span><span class="s1">]</span><span class="s3">.</span>
+
+
+<span class="s0">[angularjs]</span><span class="s1">: </span><span class="s4">https://angularjs.org/</span>
+<span class="s0">[git]</span><span class="s1">: </span><span class="s4">https://git-scm.com/</span>
+<span class="s0">[http-server]</span><span class="s1">: </span><span class="s4">https://github.com/indexzero/http-server</span>
+<span class="s0">[jasmine]</span><span class="s1">: </span><span class="s4">https://jasmine.github.io/</span>
+<span class="s0">[jdk]</span><span class="s1">: </span><span class="s4">https://wikipedia.org/wiki/Java_Development_Kit</span>
+<span class="s0">[jdk-download]</span><span class="s1">: </span><span class="s4">http://www.oracle.com/technetwork/java/javase/downloads</span>
+<span class="s0">[karma]</span><span class="s1">: </span><span class="s4">https://karma-runner.github.io/</span>
+<span class="s0">[local-app-url]</span><span class="s1">: </span><span class="s4">http://localhost:8000/index.html</span>
+<span class="s0">[node]</span><span class="s1">: </span><span class="s4">https://nodejs.org/</span>
+<span class="s0">[npm]</span><span class="s1">: </span><span class="s4">https://www.npmjs.org/</span>
+<span class="s0">[protractor]</span><span class="s1">: </span><span class="s4">http://www.protractortest.org/</span>
+<span class="s0">[selenium]</span><span class="s1">: </span><span class="s4">http://docs.seleniumhq.org/</span>
+<span class="s0">[travis]</span><span class="s1">: </span><span class="s4">https://travis-ci.org/</span>
+<span class="s0">[travis-docs]</span><span class="s1">: </span><span class="s4">https://docs.travis-ci.com/user/getting-started</span>
+</pre>
+</body>
+</html>
